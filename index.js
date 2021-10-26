@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import StichesJs from './StichesJs'
+import Stiches from './Stiches'
 import StyledComponents from './StyledComponents'
 import Emotion from './Emotion'
 import Linaria from './Linaria'
@@ -11,7 +11,7 @@ import { theme } from './xstyled'
 const App = () => (
   <StyledComponentsProvider theme={theme}>
     <EmotionProvider theme={theme}>
-      <StichesJs />
+      <Stiches />
       <StyledComponents />
       <Emotion />
       <Linaria />

@@ -34,7 +34,6 @@ const Button = styled.button(
   ({ ghost }) => ghost && css({
     opacity: .3,
     padding: 'medium',
-    margin: ''
   }),
 )
 
@@ -63,7 +62,7 @@ export default function App() {
       <h2>Styled Components</h2>
 
       <Flex>
-        <Button backgroundColor='off'>can only add enabled props</Button>
+        <Button backgroundColor='pink'>can only add enabled props</Button>
         <Button ghost>ghost</Button>
         <Button foo='error'>error</Button>
         <Button foo='success'>success</Button>

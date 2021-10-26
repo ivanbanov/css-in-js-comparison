@@ -56,10 +56,10 @@ const Extended = styled(Box, {
 
 export default () => (
   <>
-    <h2>StichesJs</h2>
+    <h2>Stiches</h2>
 
     <Flex>
-      <Button css={{ backgroundColor: 'pink' }}>can add any custom</Button>
+      <Button css={{ backgroundColor: '$off' }}>can add any custom</Button>
       <Button ghost>ghost</Button>
       <Button foo='error'>error</Button>
       <Button foo='success'>success</Button>

@@ -9,18 +9,18 @@ module.exports = api => {
       '@xstyled/babel-preset-emotion-css-prop'
     ],
     plugins: [
-      // [
-      //   'styled-components',
-      //   {
-      //     ssr: true,
-      //     displayName: true,
-      //     pure: true,
-      //     transpileTemplateLiterals: true,
-      //     'topLevelImportPaths': [
-      //       '@xstyled/styled-components'
-      //     ]
-      //   }
-      // ]
+      [
+        'styled-components',
+        {
+          ssr: true,
+          displayName: true,
+          pure: true,
+          transpileTemplateLiterals: true,
+          'topLevelImportPaths': [
+            '@xstyled/styled-components'
+          ]
+        }
+      ]
     ]
   }
 }

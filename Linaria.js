@@ -70,6 +70,7 @@ export default () => (
       <Button foo='success'>success</Button>
       <Button foo='info'>info</Button>
     </Flex>
+    <small>(some css props wont rely on their native default)</small>
 
     <Extended>Extended component</Extended>
 
