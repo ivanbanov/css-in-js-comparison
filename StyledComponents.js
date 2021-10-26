@@ -1,8 +1,7 @@
 import React from 'react'
-import styled, { /*, css*/ } from '@xstyled/styled-components'
-import { system, backgrounds, color, space } from '@xstyled/system'
+import styled, { css } from '@xstyled/styled-components'
+import { system, color, space } from '@xstyled/system'
 import { styledComponentsVariant as variant } from './xstyled'
-
 
 const Button = styled.button(
   {
@@ -32,25 +31,12 @@ const Button = styled.button(
       }
     }
   }),
-  variant({
-    prop: 'ghost',
-    default: 'false',
-    variants: {
-      true: {
-        opacity: .3
-      }
-    }
+  ({ ghost }) => ghost && css({
+    opacity: .3,
+    padding: 'medium',
+    margin: ''
   }),
-
-  // --- variants alternative ---
-  // ({ ghost }) => ghost && css({
-  //   opacity: .3,
-  // }),
-
-  // --- system props ---
-  // backgrounds,
 )
-
 
 const Child = styled.div({}, color, space)
 const Box = styled.div({
@@ -66,21 +52,28 @@ const Flex = props => (
   />
 )
 
+const Extended = styled(Box)({
+  color: 'success'
+})
+
+
 export default function App() {
   return (
     <>
       <h2>Styled Components</h2>
 
       <Flex>
-        <Button backgroundColor='pink'>can only add enabled props</Button>
+        <Button backgroundColor='off'>can only add enabled props</Button>
         <Button ghost>ghost</Button>
         <Button foo='error'>error</Button>
         <Button foo='success'>success</Button>
         <Button foo='info'>info</Button>
       </Flex>
 
+      <Extended>Extended component</Extended>
+
       <Box borderBottom='1px solid'>
-        <Child>child component selector</Child>
+        <Child color='error'>Child component selector</Child>
       </Box>
     </>
   )

@@ -6,7 +6,7 @@ module.exports = api => {
       '@babel/preset-env',
       '@babel/preset-react',
       '@linaria',
-      // '@xstyled/babel-preset-emotion-css-prop'
+      '@xstyled/babel-preset-emotion-css-prop'
     ],
     plugins: [
       // [

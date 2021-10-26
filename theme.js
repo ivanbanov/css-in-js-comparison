@@ -4,6 +4,7 @@ export default {
     success: 'green',
     info: 'blue',
     warning: 'gold',
+    off: 'pink',
   },
   space: {
     small: '5px',

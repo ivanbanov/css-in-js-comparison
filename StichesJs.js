@@ -29,6 +29,7 @@ const Button = styled(
       ghost: {
         true: {
           opacity: .3,
+          padding: '$medium',
         }
       }
     },
@@ -49,7 +50,9 @@ const Box = styled('div', {
   [Child]: { color: '$success' }
 })
 
-
+const Extended = styled(Box, {
+  color: '$success'
+})
 
 export default () => (
   <>
@@ -63,18 +66,10 @@ export default () => (
       <Button foo='info'>info</Button>
     </Flex>
 
+    <Extended>Extended component</Extended>
+
     <Box css={{ borderBottom: '1px solid' }}>
-      <Child>child component selector</Child>
+      <Child>Child component selector</Child>
     </Box>
   </>
 )
-
-
-
-
-
-
-
-
-
-// console.log(getCssText().replace(/(--|\@|\}|\.)/g, '\n$1'))

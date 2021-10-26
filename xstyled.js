@@ -7,6 +7,7 @@ export const theme = {
     success: 'var(--colors-success)',
     info: 'var(--colors-info)',
     warning: 'var(--colors-warning)',
+    off: 'var(--colors-off)',
   },
   space: {
     small: 'var(--space-small)',
