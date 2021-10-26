@@ -64,7 +64,9 @@ export default () => (
     <h2>Linaria</h2>
 
     <Flex>
-      <Button style={{ backgroundColor: theme.colors.off }}>can add any custom</Button>
+      <Button style={{ backgroundColor: theme.colors.off }}>
+        can add any custom
+      </Button>
       <Button ghost>ghost</Button>
       <Button foo='error'>error</Button>
       <Button foo='success'>success</Button>
